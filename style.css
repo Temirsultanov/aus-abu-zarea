@@ -47,13 +47,14 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
   gap: 12px;
-
-  & svg {
-    width: 20px;
-    height: 20px;
-    fill: #007880;
-  }
 }
+
+.telegram-link svg {
+  width: 20px;
+  height: 20px;
+  fill: #007880;
+}
+
 
 .telegram-link:hover {
   color: #4f59e0;
