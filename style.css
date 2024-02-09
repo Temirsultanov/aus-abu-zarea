@@ -122,6 +122,6 @@ h3 {
 
 @media (max-width: 860px) {
   .container {
-    width: 310px;
+    width: calc(100% - 30px);
   }
 }
