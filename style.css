@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
   width: 800px;
   padding-top: 120px;
+  padding-bottom: 120px;
   
   display: flex;
   flex-direction: column;
@@ -82,7 +83,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #948761;
+  color: #61583c;
   background-color: #FDF7E4;
 
   width: 100%;
@@ -99,4 +100,30 @@ h3 {
 
 .lections a:hover {
   color: #323edc;
+}
+
+.ar {
+  text-align: right;
+  align-items: flex-end;
+
+  & hr {
+    align-self: end;
+  }
+
+  & .lections {
+    padding-right: 0px;    
+    padding-left: 0;
+    text-align: right;
+    direction: rtl;
+  }
+
+  & li {
+    list-style-position: inside;
+  }
+}
+
+@media (max-width: 860px) {
+  .container {
+    width: 330px;
+  }
 }
