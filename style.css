@@ -125,4 +125,7 @@ h3 {
   .container {
     width: calc(100% - 30px);
   }
+  .telegram-link {
+    font-size: 16px;
+  }
 }
