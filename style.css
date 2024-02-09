@@ -105,6 +105,7 @@ h3 {
 .ar {
   text-align: right;
   align-items: flex-end;
+  direction: rtl;
 }
 
 .ar hr {
