@@ -3,14 +3,19 @@
 }
 
 body {
+  --black: #040D12;
+  --background: #FDF7E4;
+  --accent: rgb(228, 19, 19);
+  --hover: rgb(255, 79, 79);
+
   margin: 0;
   display: flex;
   justify-content: center;
 
   font-family: "Lora";
-  color: #040D12;
-  background-color: #FDF7E4;
-  /* background-color: #F6EEE3; */
+  color: var(--black);
+  background-color: var(--background);
+  
   line-height: 1.4;
 }
 
@@ -34,16 +39,27 @@ h1, h2, h3, h4, h5, h6, p {
 
 .subtitle {
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 400;
 }
 
+.description {
+  margin-top: 30px;
+  font-size: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.description li {
+  margin-bottom: 5px;
+}
+
 .telegram-link {
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  color: #007880;
+  color: var(--accent);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -52,24 +68,24 @@ h1, h2, h3, h4, h5, h6, p {
 .telegram-link svg {
   width: 20px;
   height: 20px;
-  fill: #007880;
+  fill: var(--accent);
 }
 
 
 .telegram-link:hover {
-  color: #4f59e0;
+  color: var(--hover);
 }
 
 .telegram-link:hover svg {
-  fill: #4f59e0;
+  fill: var(--hover);
 }
 
 hr {
   width: 80%;
   display: block;
-  margin: 30px 0;
+  margin: 40px 0;
   height: 1px;
-  background: #040D12;
+  background: var(--black);
   border: none;
   align-self: start;
 }
@@ -84,8 +100,8 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  color: #61583c;
-  background-color: #FDF7E4;
+  color: var(--black);
+  background-color: var(--background);
 
   width: 100%;
 }
@@ -96,11 +112,11 @@ h3 {
 }
 
 .lections a {
-  color: black;
+  color: var(--black);
 }
 
 .lections a:hover {
-  color: #323edc;
+  color: var(--hover);
 }
 
 .ar {
@@ -122,10 +138,25 @@ h3 {
 
 
 @media (max-width: 860px) {
+  .title {
+    font-size: 26px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
   .container {
     width: calc(100% - 30px);
   }
   .telegram-link {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .lections li {
     font-size: 16px;
   }
 }
